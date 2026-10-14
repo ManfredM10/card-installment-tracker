@@ -1,0 +1,35 @@
+# Business rules for the tracker. Copy this file and adjust it to your card.
+
+# Suppliers you buy from (dropdown in the workbook).
+merchants = ["Supplier A", "Supplier B", "Amazon"]
+
+[card]
+# Day of the month the statement is paid. An installment counts as paid once
+# this day of its month has passed (no manual marking needed).
+payment_day = 20
+# Months between a purchase and its first installment.
+# Purchase in May + 2 → first installment in July.
+first_installment_offset = 2
+
+# Commission the issuer charges for each term, as a fraction of the amount.
+# It is charged in full together with the first installment.
+# Term 1 = paid in a single statement, no commission.
+[commissions]
+1 = 0.0
+3 = 0.025
+4 = 0.025
+6 = 0.03
+9 = 0.03
+12 = 0.04
+
+[currency]
+symbol = "$"
+# Optional: show installments converted to a second currency.
+secondary_symbol = "₡"
+exchange_rate = 500
+
+[workbook]
+# Empty, formula-ready rows left for purchases added by hand.
+spare_rows = 60
+# Month columns in the Calendar sheet.
+calendar_months = 24

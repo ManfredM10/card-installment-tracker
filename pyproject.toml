@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "card-installment-tracker"
+version = "0.1.0"
+description = "Track credit-card purchases financed in installments, with a live Excel tracker."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Manfred Monge Muñoz" }]
+keywords = ["excel", "openpyxl", "finance", "installments", "credit-card", "small-business"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Office/Business :: Financial :: Spreadsheet",
+]
+dependencies = ["openpyxl>=3.1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+installment-tracker = "installment_tracker.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["installment_tracker*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

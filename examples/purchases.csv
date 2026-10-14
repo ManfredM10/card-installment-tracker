@@ -1,0 +1,16 @@
+code,date,merchant,amount,term_months,first_month_override
+P001,2026-05-20,Supplier A,1500.00,4,
+P002,2026-05-22,Supplier B,2100.00,4,
+P003,2026-06-09,Supplier A,980.00,4,
+P004,2026-06-11,Supplier B,2600.00,6,
+P005,2026-06-17,Amazon,240.00,1,
+P006,2026-06-22,Supplier A,2050.00,3,
+P007,2026-06-30,Supplier B,4100.00,6,2026-09-01
+P008,2026-07-16,Supplier A,1200.00,1,
+P009,2026-07-22,Supplier B,5000.00,6,
+P010,2026-08-11,Supplier A,1900.00,3,
+P011,2026-08-25,Supplier B,1650.00,6,
+P012,2026-09-18,Supplier A,2200.00,6,
+P013,2026-09-24,Supplier B,1450.00,3,
+P014,2026-10-01,Amazon,700.00,1,
+P015,2026-10-10,Supplier A,3700.00,6,

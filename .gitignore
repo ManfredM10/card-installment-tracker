@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+# your real data and generated workbooks stay local
+config.toml
+purchases.csv
+*.xlsx
+!examples/*
