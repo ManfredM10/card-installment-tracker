@@ -1,5 +1,9 @@
 # Card Installment Tracker
 
+[![tests](https://github.com/ManfredM10/card-installment-tracker/actions/workflows/tests.yml/badge.svg)](https://github.com/ManfredM10/card-installment-tracker/actions/workflows/tests.yml)
+![python](https://img.shields.io/badge/python-3.11%2B-blue)
+![license](https://img.shields.io/badge/license-MIT-green)
+
 Track credit-card purchases that are financed in installments (3, 6, 9… months) and
 always know **what is due this month, what is already paid and how much is still
 outstanding** — without marking anything by hand.
